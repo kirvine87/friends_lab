@@ -11,6 +11,12 @@ def likes_to_eat(person, food)
 end
 
 def add_friend(person, friend)
-  added_friend = person[:friends].push(friend)
-  added_friend.size()
+  added_friends = person[:friends].push(friend)
+  added_friends.size()
+end
+
+def remove_friend(person, friend)
+  remove_friends = person[:friends]
+  remove_friends.delete(friend.capitalize())
+  remove_friends.size()
 end
