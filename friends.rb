@@ -50,3 +50,14 @@ def all_fav_food(peoples)
   end
   return all_fav_foods.size()
 end
+
+def no_friends(peoples)
+  no_friend = []
+  for people in peoples
+    friends = people[:friends]
+    if friends.empty?
+      no_friend.push(people[:name])
+    end
+  end
+  return no_friend
+end
