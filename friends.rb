@@ -20,3 +20,11 @@ def remove_friend(person, friend)
   remove_friends.delete(friend.capitalize())
   remove_friends.size()
 end
+
+def total_monies(peoples)
+  total = 0
+  for people in peoples
+    total += people[:monies]
+  end
+  return total
+end
