@@ -39,3 +39,14 @@ def lend_monies (lender, lendee, amount)
   end
 
 end
+
+def all_fav_food(peoples)
+  all_fav_foods = []
+  for people in peoples
+    snacks =people[:favourites][:snacks]
+    for snack in snacks
+      all_fav_foods.push(snack)
+    end
+  end
+  return all_fav_foods.size()
+end
