@@ -28,3 +28,14 @@ def total_monies(peoples)
   end
   return total
 end
+
+def lend_monies (lender, lendee, amount)
+  if amount > lender[:monies]
+    return "Not enough monies."
+  else
+    lenders = lender[:monies] - amount
+    lendees = lendee[:monies] + amount
+    return lendees && lenders
+  end
+
+end
