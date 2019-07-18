@@ -8,5 +8,9 @@ end
 
 def likes_to_eat(person, food)
   return (person[:favourites][:snacks]).include?(food)
+end
 
+def add_friend(person, friend)
+  added_friend = person[:friends].push(friend)
+  added_friend.size()
 end
